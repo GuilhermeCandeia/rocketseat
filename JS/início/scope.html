@@ -1,0 +1,40 @@
+# Scope
+
+* Escopo determina a visibilidade de alguma variável no JS
+
+# Block statement
+
+``JS
+
+// Vamos iniciar um bloco 
+
+{
+    //aqui dentro é um bloco e podemos colocar qualquer código
+    //aqui fechamos o bloco
+
+}
+```
+
+O bloco também criará um novo escopo. Chamamos de `block-scoped`
+
+## var
+
+```js 
+
+//var é global e poderá funcionar fora de um escopo de bloco  -- evitamos usar o var
+
+
+## let e const
+
+// const e let são locais e só funcionam no escopo onde foi criada
+
+console.log('> existe y antes do bloco? ', y)
+
+{
+    let y = 0
+}
+
+console.log('> existe y depois do bloco? ', y)
+
+
+
